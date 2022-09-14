@@ -1,2 +1,1 @@
-heroku ps:scale web=1
-web gunicorn sms.wsgi:application --log-file - 
+web: gunicorn sms.wsgi:application --log-file - 
